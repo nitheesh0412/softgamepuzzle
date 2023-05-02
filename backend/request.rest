@@ -1,0 +1,61 @@
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "email": "nitheesh69@gmail.com",
+    "password": "nani"
+}
+
+###
+
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email": "nitheesh69@gmail.com",
+    "password": "nani"
+}   
+
+###
+
+POST http://localhost:3001/adminlogin
+Content-Type: application/json
+
+{
+    "email" : "nitheeshtangellapally@gmail.com",
+    "password" : "nani0412"
+}
+
+###
+PUT http://localhost:3001/inspect/lawda@gmail.com
+Content-Type: application/json
+
+{
+  "timeSpent": 492,
+  "wrongAnswers": 3
+}
+
+###
+PUT http://localhost:3001/slidepuzzle/lawda@gmail.com
+Content-Type: application/json
+
+{
+    
+    "noofmoves" : 278,
+    "timeslide" : 350
+}
+###
+
+GET http://localhost:3001/lawda@gmail.com/stats
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDRiZTJhOWJiOGNkNWZlNDRhMDU0ZmUiLCJpYXQiOjE2ODI4NDA5MzF9.Hkf-0MxxTcqDrYo4_E_r47leF5_2DmzSQ_O3Tj-nmK4>
+
+###
+GET http://localhost:3001/lawda@gmail.com/puzzlestats
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDRiZTJhOWJiOGNkNWZlNDRhMDU0ZmUiLCJpYXQiOjE2ODI4NDA5MzF9.Hkf-0MxxTcqDrYo4_E_r47leF5_2DmzSQ_O3Tj-nmK4>
+
+###
+# Get all user statistics
+GET http://localhost:3001/adminstats
+Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDRiZTJhOWJiOGNkNWZlNDRhMDU0ZmUiLCJpYXQiOjE2ODI4NDA5MzF9.Hkf-0MxxTcqDrYo4_E_r47leF5_2DmzSQ_O3Tj-nmK4>
+
+# Authorization: Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjQ0ZDVlMjcyNzJiODZlYWI1YmI4MWMzIiwiaWF0IjoxNjgyOTE5NTc5fQ.IPbUHRWl4DfvOJPrBmuWRXxlu5xgtFDdMF0JY_PDGWo>

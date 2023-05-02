@@ -1,0 +1,21 @@
+.the{
+    font-weight: 500;
+    color: rgb(69, 45, 41);
+}
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(227, 210, 189);
+    border-radius: 15px;
+  }
+
+  .table-title {
+    background-color: #f0f8ff;
+    color: #00008b;
+    font-weight: bold;
+  }
+
+  .table-dark th {
+    background-color: #00008b;
+    color: white;
+  }

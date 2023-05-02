@@ -1,0 +1,82 @@
+body {
+	background-color: #f0f0f0;
+}
+
+h1 {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 3rem;
+	color: #070110;
+	text-shadow: 2px 2px 2px #fff;
+	font-weight: 900;
+	
+}
+
+.description {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #0a0909;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.image-wrapper {
+	position: relative;
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+	transform: scale(1.05);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	transition: transform 0.5s ease-in-out;
+	transform-origin: center center;
+}
+
+.image-wrapper:hover img {
+	transform: rotateY(90deg);
+}
+
+.image-wrapper .back-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	transform: rotateY(180deg);
+	transition: transform 0.5s ease-in-out;
+	transform-origin: center center;
+}
+
+.image-wrapper:hover .back-image {
+	transform: rotateY(0deg);
+}
+
+.hidden-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden-text:hover {
+  opacity: 1;
+}

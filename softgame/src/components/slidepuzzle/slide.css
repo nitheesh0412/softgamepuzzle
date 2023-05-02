@@ -1,0 +1,47 @@
+
+
+.Slide {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+h1 {
+  margin: 0;
+}
+.board {
+  position: relative;
+  padding: 0;
+}
+.tile {
+  position: absolute;
+  list-style: none;
+  background: #ec6f66;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+button {
+  display: block;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: rgb(18, 17, 17);
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+.centers{
+  margin-left: 350px;
+}
+.textss{
+  font-weight: 500;
+  color: #211e1e;
+}
+.large-input {
+  width: 500px;
+  height: 40px;
+}

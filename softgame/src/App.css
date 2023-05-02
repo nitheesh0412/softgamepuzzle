@@ -1,0 +1,9 @@
+.custom-dropdown {
+    border-color: #f8f9fa;
+    color: #212529;
+  }
+  
+  .custom-dropdown .dropdown-item {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
