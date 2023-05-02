@@ -8,8 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname + "/public")))
-mongoose.connect("mongodb://127.0.0.1:27017/game-db", {
+mongoose.connect("mongodb://0.0.0.0:27017/game-db", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("connected to db")).catch(console.error);
